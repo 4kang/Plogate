@@ -11,6 +11,8 @@ public class Arrey {
 		String[] names = {"John", "Kate", "Bob",};
 		
 		System.out.println("私の名前は" + names[0] + "です");
+		System.out.println("私の名前は" + names[1] + "です");
+		System.out.println("私の名前は" + names[2] + "です");
 		
 		
 		System.out.println("＝＝＝配列の要素を上書きする＝＝＝");
@@ -25,6 +27,20 @@ public class Arrey {
 		
 		
 		System.out.println("＝＝＝繰り返し＝＝＝");
+		
+		for(int i = 0;i < 3;i++) {
+			System.out.println("Hello" + names[i]);
+		}
+		
+		for(int x = 0;x < names.length; x++) { 
+			System.out.println("こんにちは" + names[x]);
+		}
+		
+		
+		System.out.println("＝＝＝拡張for文の文法＝＝＝");
+		for(String name: names) {
+			System.out.println("貴方の名前は" + name);
+		}
 				
 
 	}
